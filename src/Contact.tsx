@@ -64,20 +64,20 @@ function Contact() {
   return (
     <>
       <div className="cta bg-grapePurple mt-4">
-        <div className="wallpaper text-white flex justify-center items-center md:h-[268px] flex-col gap-4 bg-[url('/wallpaper.svg')]">
+        <div className="wallpaper md:py-0 py-10 px-4 md:px-0 text-white flex justify-center items-center md:h-[268px] flex-col gap-4 bg-[url('/wallpaper.svg')]">
           <h1 className="font-semibold text-4xl font-recoleta-alt">
             Get in touch
           </h1>
-          <p className="font-circular font-normal text-xl text-palePurple">
+          <p className="font-circular font-normal text-center text-xl text-palePurple">
             We are here to support you throughout the process of getting your
             business listed.
           </p>
         </div>
       </div>
 
-      <section className="card flex justify-around text-center">
+      <section className="card flex md:flex-row md:gap-0 gap-10 flex-col justify-around text-center">
         {cards.map((card) => (
-          <div className="rounded-xl px-[71px] h-[197px] flex flex-col justify-center relative bg-white -top-16 border border-[#EEEEFF]">
+          <div className="rounded-xl px-[71px] h-[197px] flex flex-col justify-center md:relative bg-white -top-16 border border-[#EEEEFF]">
             <div className="head flex items-center gap-5">
               <img src={card.icon} alt={card.header} />
               <h2 className="font-circular text-2xl font-medium text-darkSlateBlue">
@@ -109,7 +109,7 @@ function Contact() {
                   <input
                     type="text"
                     onChange={(e) => setname(e.target.value)}
-                    className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]"
+                    className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]"
                   />
                 </div>
                 <div className="input flex flex-col gap-2">
@@ -122,7 +122,7 @@ function Contact() {
                   <input
                     type="email"
                     onChange={(e) => setemail(e.target.value)}
-                    className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]"
+                    className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]"
                   />
                 </div>
                 <div className="input flex flex-col gap-2">
@@ -135,7 +135,7 @@ function Contact() {
                   <input
                     type="text"
                     onChange={(e) => settype(e.target.value)}
-                    className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]"
+                    className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]"
                   />
                 </div>
                 <div className="input flex flex-col gap-2">
@@ -146,7 +146,7 @@ function Contact() {
                     Subject
                   </label>
                   <Select onValueChange={(e) => setsubject(e)}>
-                    <SelectTrigger className="bg-skyBlue md:w-[476px] md:h-[56px] focus:outline-none ">
+                    <SelectTrigger className="bg-skyBlue md:w-[476px] h-[56px] focus:outline-none ">
                       <SelectValue placeholder="Select a subject" />
                     </SelectTrigger>
                     <SelectContent>

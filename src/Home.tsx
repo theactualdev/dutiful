@@ -6,23 +6,23 @@ import appointments from "/appointments.svg";
 function Home() {
   return (
     <>
-      <section className="dashboard flex justify-around items-center md:mt-[45px]">
+      <section className="dashboard flex flex-col md:flex-row justify-around mx-4 m:mx-0 items-center mt-[45px]">
         <div className="text-container flex flex-col gap-4 md:max-w-[559px]">
-            <h1 className="font-recoleta-alt font-bold text-4xl text-midnightPurple md:max-w-[481px]">List and grow your business  with just few clicks</h1>
-            <p className="text-charcoalGray font-circular font-normal text-xl">Eliminate manual work and save time by listing your business or service on the best business directory in Nigeria.</p>
+            <h1 className="font-recoleta-alt font-bold text-[26px] md:text-4xl text-midnightPurple md:max-w-[481px]">List and grow your business  with just few clicks</h1>
+            <p className="text-charcoalGray font-circular font-normal text-base md:text-xl">Eliminate manual work and save time by listing your business or service on the best business directory in Nigeria.</p>
         </div>
         <div className="image-container">
             <img src={dashboard} alt="DashBoard" />
         </div>
       </section>
 
-      <section className="ratings md:mt-10 flex justify-around items-center">
+      <section className="ratings mt-10 flex md:flex-row flex-col-reverse mx-4 md:mx-0 justify-around items-center">
         <div className="image-container">
             <img src={ratings} alt="Ratings" />
         </div>
         <div className="text-container md:max-w-[557px] flex flex-col gap-4">
-            <h2 className="font-recoleta-alt font-bold text-darkSlateBlue text-4xl md:max-w-[536px]">Collect reviews and ratings from customers</h2>
-            <p className="font-circular font-normal text-dimGray text-xl">Accelerate your business reputation by 90% and gain social proof through reviews and ratings requested from customers.</p>
+            <h2 className="font-recoleta-alt font-bold text-darkSlateBlue text-[25px] md:text-4xl md:max-w-[536px]">Collect reviews and ratings from customers</h2>
+            <p className="font-circular font-normal text-dimGray md:text-xl">Accelerate your business reputation by 90% and gain social proof through reviews and ratings requested from customers.</p>
         </div>
       </section>
 
@@ -30,7 +30,7 @@ function Home() {
         <img src={features} alt="Features" />
       </section>
 
-      <section className="appointments flex items-center justify-around md:mt-11">
+      <section className="appointments flex md:flex-row flex-col-reverse mx-4 md:mx-0 gap-6 md:gap-0 items-center justify-around mt-11">
         <div className="image-container">
             <img src={appointments} alt="Appointments" />
         </div>

@@ -11,8 +11,8 @@ let year = new Date().getFullYear();
 
 function Footer(){
     return(
-        <footer className="bg-grapePurple py-8 md:px-[130px]">
-            <div className="col-1 flex justify-between mt-4 text-white"> 
+        <footer className="bg-grapePurple py-8 md:px-[130px] px-10">
+            <div className="col-1 flex flex-col md:flex-row justify-between gap-10 md:gap-0 mt-4 text-white"> 
                 <div className="row-1 flex flex-col gap-4">
                     <h3><Link to={"/home"} className="font-circular font-medium text-[22px]">Company</Link></h3>
                     <ul className="flex flex-col gap-3">
@@ -44,7 +44,7 @@ function Footer(){
                 </div>
             </div>
             <hr className="mt-10 border-plumPurple" />
-            <div className="col-1 flex justify-between my-4">
+            <div className="col-1 flex md:flex-row flex-col gap-8 md:gap-0 items-center md:justify-between my-4">
                 <div className="following flex gap-5 text-white">
                     <p className="font-circular font-medium text-lg">Follow us</p>
                     <Link to={"https://facebook.com"} target="_blank"> <img src={facebook} alt="Facebook" /> </Link>
@@ -60,7 +60,7 @@ function Footer(){
                 </div>
             </div>
             <hr className="border-plumPurple" />
-            <div className="col-1 text-white flex gap-32 mt-4">
+            <div className="col-1 text-white md:flex-row flex-col items-center flex gap-8 md:gap-32 mt-4">
                 <p>&copy; {year} Dutiful&reg; </p>
                 <ul className="flex gap-8">
                     <li><Link to={"/home"} className="font-normal text-base font-circular text-lavender">Terms of Service</Link></li>

@@ -19,7 +19,7 @@ function Forgot() {
     }
 
   return (
-    <form className="mb-20" onSubmit={(e) => handleSubmit(e)}>
+    <form className="mb-20 mx-10 md:mx-0" onSubmit={(e) => handleSubmit(e)}>
       <div className="wrapper flex w-full mt-[72px] items-center justify-center">
         <div className="card md:max-w-[459px] flex flex-col text-left gap-8">
           <div className="text flex flex-col-reverse gap-3">
@@ -42,7 +42,7 @@ function Forgot() {
               <input
                 type="email"
                 onChange={(e) => setemail(e.target.value)}
-                className="bg-skyBlue border-lavendarGray border-2 rounded-md md:w-full focus:outline-none pl-4 md:h-[56px]"
+                className="bg-skyBlue border-lavendarGray border-2 rounded-md w-full focus:outline-none pl-4 h-[56px]"
               />
             </div>
             <button

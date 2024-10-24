@@ -96,7 +96,7 @@ function SignUp(){
                         <h1 className='font-semibold text-4xl font-recoleta-alt text-darkSlateBlue'>Get started</h1>
                     </div>
                     <div className="user-type">
-                        <div className="type flex justify-between">
+                        <div className="type flex md:flex-row flex-col gap-6 md:gap-0 justify-between">
                             { userTypes.map((userTypes) => (
                                 <div onClick={(e) => changeUser(e)} className="relative cursor-pointer flex rounded-xl px-[22px] py-[30px] items-center gap-6 border-royalPurple border">
                                     <img src={userTypes.active === true ? userTypes.logo : userTypes.disabledLogo} alt="User" />
@@ -109,27 +109,27 @@ function SignUp(){
                     <div className="form flex flex-col gap-6">
                         <div className="input flex flex-col gap-2">
                             <label htmlFor="name" className='font-circular text-base font-medium text-royalPurple'>Full name</label>
-                            <input required type="text" onChange={(e) => setname(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                            <input required type="text" onChange={(e) => setname(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]' />
                         </div>
                         <div className="input flex flex-col gap-2">
                             <label htmlFor="email" className='font-circular text-base font-medium text-royalPurple'>Email</label>
-                            <input required type="email" onChange={(e) => setemail(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                            <input required type="email" onChange={(e) => setemail(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]' />
                         </div>
                         <div className="input flex flex-col gap-2">
                             <label htmlFor="number" className='font-circular text-base font-medium text-royalPurple'>Phone number</label>
-                            <input required type="number" onChange={(e) => setnumber(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                            <input required type="tel" onChange={(e) => setnumber(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]' />
                         </div>
                         <div className="password">
                             <label htmlFor="password" className='font-circular text-base font-medium text-royalPurple'>Password</label>
                             <div className="in relative">
-                                <input required onChange={(e) => setpassword(e.target.value)} type={passType} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                                <input required onChange={(e) => setpassword(e.target.value)} type={passType} className='bg-skyBlue border-lavendarGray border-2 rounded-md w-full md:w-[476px] focus:outline-none pl-4 h-[56px]' />
                                 <img src={passType === "text" ? eye : blindEye} className='absolute right-4 cursor-pointer top-1/3' alt="view password"  onClick={hidePassword}/>
                             </div>
                         </div>
                         <div className="password">
                             <label htmlFor="password" className='font-circular text-base font-medium text-royalPurple'>Re-enter Password</label>
                             <div className="in relative">
-                                <input onChange={(e) => setaltPassword(e.target.value)} type={altPassType} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                                <input onChange={(e) => setaltPassword(e.target.value)} type={altPassType} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 w-full h-[56px]' />
                                 <img src={altPassType === "text" ? eye : blindEye} className='absolute right-4 cursor-pointer top-1/3' alt="view password"  onClick={hideAltPassword}/>
                             </div>
                         </div>

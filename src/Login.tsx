@@ -38,12 +38,12 @@ function Login(){
                     <div className="form flex flex-col gap-6">
                         <div className="input flex flex-col gap-2">
                             <label htmlFor="email" className='font-circular text-base font-medium text-royalPurple'>Email</label>
-                            <input type="email" onChange={(e) => setemail(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                            <input type="email" onChange={(e) => setemail(e.target.value)} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]' />
                         </div>
                         <div className="password">
-                            <label htmlFor="password" className='font-circular text-base font-medium text-royalPurple'>password</label>
+                            <label htmlFor="password" className='font-circular text-base font-medium text-royalPurple'>Password</label>
                             <div className="in relative">
-                                <input onChange={(e) => setpassword(e.target.value)} type={passType} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 md:h-[56px]' />
+                                <input onChange={(e) => setpassword(e.target.value)} type={passType} className='bg-skyBlue border-lavendarGray border-2 rounded-md md:w-[476px] focus:outline-none pl-4 h-[56px]' />
                                 <img src={passType === "text" ? eye : blindEye} className='absolute right-4 cursor-pointer top-1/3' alt="view password"  onClick={hidePassword}/>
                             </div>
                         </div>

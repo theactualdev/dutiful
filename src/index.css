@@ -118,3 +118,15 @@
     --radius: 0.5rem;
   }
 }
+
+.bar-1{
+  transform: rotateZ(45deg) translateX(10px);
+}
+
+.bar-2{
+  display: none;
+}
+
+.bar-3{
+  transform: rotateZ(135deg) translateX(-10px);
+}
