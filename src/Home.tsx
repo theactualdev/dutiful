@@ -1,9 +1,7 @@
-import Nav from "./components/Nav";
 import dashboard from "/dashboard.svg";
 import ratings from "/ratings.svg";
 import features from "/features.svg";
 import appointments from "/appointments.svg";
-import Footer from "./components/Footer";
 
 function Home() {
   return (
