@@ -1,8 +1,7 @@
 import mail from "/mail.svg";
 import map from "/map.svg";
 import phone from "/phone.svg";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Select,
   SelectContent,

@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import eye from "/eye.svg";
 import blindEye from '/blind-eye.svg'
 import user from "/user.svg";

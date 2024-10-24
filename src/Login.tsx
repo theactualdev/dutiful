@@ -1,8 +1,7 @@
-import { signInWithEmailAndPassword } from 'firebase/auth';
 import eye from '/eye.svg';
 import blindEye from "/blind-eye.svg"
 import { useState } from 'react';
-import { Form, Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { doSignInWithEmailAndPassword } from './firebase/auth';
 
 
