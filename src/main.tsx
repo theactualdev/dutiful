@@ -55,6 +55,10 @@ const router = createBrowserRouter([
         path: "/passreset",
         element: <Reset />
       },
+      {
+        path: "/",
+        element: <Home />
+      },
     ] 
   }
 ])
