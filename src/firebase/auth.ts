@@ -23,13 +23,3 @@ export const doSignOut = () => {
 export const doPasswordReset = (email : any) => {
     return sendPasswordResetEmail(auth, email);  
 }
-
-// export const doPasswordChange = (password) => {
-//     return updatePassword(auth.currentUser, password);
-// }
-
-// export const doEmailVerification = () => {
-//     return sendEmailVerification(auth.currentUser, {
-//         url: `${window.location.origin}/home`
-//     })
-// }
