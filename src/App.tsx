@@ -1,9 +1,9 @@
-import Nav from "./components/Nav"
+import { Home } from "lucide-react"
 
 function App() {
   return (
     <>
-      <Nav />
+      <Home />
     </>
   )
 }

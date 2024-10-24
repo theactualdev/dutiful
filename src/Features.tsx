@@ -639,7 +639,6 @@ function Features() {
                 ))}
               </div>
             </div>
-            {/* Repeat for other features */}
           </div>
         </section>
       </>
