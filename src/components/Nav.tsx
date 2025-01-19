@@ -25,9 +25,9 @@ function Nav(){
     return(
         <div className="mobile-wrapper sticky md:static top-0">
             <nav className="flex justify-around relative mt-4 md:mt-0 md:mx-4 items-center">
-                <div className="logo-container">
+                <a href="/" className="logo-container">
                     <img src={logo} alt="Dutiful Logo" />
-                </div>
+                </a>
                 <div className="list md:flex hidden justify-between gap-32">
                     <ul className="nav-list flex pt-5 gap-20 font-circular text-[18px] font-normal text-gray items-center">
                         <li><img src={search} className="cursor-pointer" alt="Search Icon" /></li>
