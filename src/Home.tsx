@@ -12,7 +12,7 @@ function Home() {
             <p className="text-charcoalGray font-circular font-normal text-base md:text-xl">Eliminate manual work and save time by listing your business or service on the best business directory in Nigeria.</p>
         </div>
         <div className="image-container">
-            <img src={dashboard} alt="DashBoard" />
+            <img src={dashboard} width={674} height={602} alt="DashBoard" />
         </div>
       </section>
 
@@ -27,12 +27,12 @@ function Home() {
       </section>
 
       <section className="features flex items-center justify-center">
-        <img src={features} alt="Features" />
+        <img src={features} width={1312} height={886} alt="Features" />
       </section>
 
       <section className="appointments flex md:flex-row flex-col-reverse mx-4 md:mx-0 gap-6 md:gap-0 items-center justify-around mt-11">
         <div className="image-container">
-            <img src={appointments} alt="Appointments" />
+            <img src={appointments} width={521} height={477} alt="Appointments" />
         </div>
         <div className="text-container md:max-w-[557px] flex flex-col gap-4">
             <h2 className="text-darkSlateBlue font-bold font-recoleta-alt text-4xl">Accept and sell appointments</h2>
