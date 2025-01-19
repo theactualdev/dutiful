@@ -18,7 +18,7 @@ function Home() {
 
       <section className="ratings mt-10 flex md:flex-row flex-col-reverse mx-4 md:mx-0 justify-around items-center">
         <div className="image-container">
-            <img src={ratings} alt="Ratings" />
+            <img src={ratings} width={767} height={773} alt="Ratings" />
         </div>
         <div className="text-container md:max-w-[557px] flex flex-col gap-4">
             <h2 className="font-recoleta-alt font-bold text-darkSlateBlue text-[25px] md:text-4xl md:max-w-[536px]">Collect reviews and ratings from customers</h2>

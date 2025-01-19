@@ -47,16 +47,16 @@ function Footer(){
             <div className="col-1 flex md:flex-row flex-col gap-8 md:gap-0 items-center md:justify-between my-4">
                 <div className="following flex gap-5 text-white">
                     <p className="font-circular font-medium text-lg">Follow us</p>
-                    <Link to={"https://facebook.com"} target="_blank"> <img src={facebook} alt="Facebook" /> </Link>
-                    <Link to={"https://instagram.com/_theactualdev_"} target="_blank">  <img src={instagram} alt="Instagram" /> </Link>
-                    <Link to={"https://twitter.com/theactualdev"} target="_blank"> <img src={twitter} alt="Twitter" /> </Link>
-                    <Link to={"https://www.youtube.com/@theActualDev"} target="_blank"> <img src={youtube} alt="Youtube" /> </Link>
-                    <Link to={"https://linkedin.com/in/theactualdev"} target="_blank"> <img src={linkedin} alt="LinkedIn" /> </Link>
+                    <Link to={"https://facebook.com"} target="_blank"> <img src={facebook} alt="Facebook" width={22} height={22} /> </Link>
+                    <Link to={"https://instagram.com/_theactualdev_"} target="_blank">  <img src={instagram} alt="Instagram" width={22} height={22} /> </Link>
+                    <Link to={"https://twitter.com/theactualdev"} target="_blank"> <img src={twitter} alt="Twitter" width={22} height={22} /> </Link>
+                    <Link to={"https://www.youtube.com/@theActualDev"} target="_blank"> <img src={youtube} alt="Youtube" width={22} height={22} /> </Link>
+                    <Link to={"https://linkedin.com/in/theactualdev"} target="_blank"> <img src={linkedin} alt="LinkedIn" width={22} height={22} /> </Link>
                 </div>
                 <div className="downloading flex gap-5 text-white">
                     <p className="font-circular font-medium text-lg">Download the app</p>
-                    <Link to={"https://www.apple.com/"} target="_blank"> <img src={apple} alt="Apple Download" /> </Link>
-                    <Link to={"https://play.google.com/store/"} target="_blank"> <img src={playstore} alt="Playstore Download" /> </Link>
+                    <Link to={"https://www.apple.com/"} target="_blank"> <img src={apple} alt="Apple Download" width={22} height={22} /> </Link>
+                    <Link to={"https://play.google.com/store/"} target="_blank"> <img src={playstore} alt="Playstore Download" width={22} height={22} /> </Link>
                 </div>
             </div>
             <hr className="border-plumPurple" />

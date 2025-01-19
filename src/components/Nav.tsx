@@ -30,7 +30,7 @@ function Nav(){
                 </a>
                 <div className="list md:flex hidden justify-between gap-32">
                     <ul className="nav-list flex pt-5 gap-20 font-circular text-[18px] font-normal text-gray items-center">
-                        <li><img src={search} className="cursor-pointer" alt="Search Icon" /></li>
+                        <li><img src={search} width={35} height={35} className="cursor-pointer" alt="Search Icon" /></li>
                         <li><Link to={"/contact"}>Business Directory</Link></li>
                         <li><Link to={"/features"}>Features</Link></li>
                         <li><Link to={"/features"}>Pricing</Link></li>
